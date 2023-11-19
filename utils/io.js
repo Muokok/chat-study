@@ -5,7 +5,6 @@ module.exports = function (io){ //io를 index.js에서 매개변수로 받아옴
     io.on("connection", async(socket)=>{ // 연결된 사람의 정보를 socket 매개변수로 받아 온다.
         console.log("client is connected", socket.id); // 소켓의 id값도 함께 출력해준다.
 
-
         socket.on("disconnect",()=>{ // 소켓 연결이 끊겼을 때 알려준다.
             console.log("user is disconnected");
         });
