@@ -18,7 +18,6 @@ const io = new Server(httpServer,{ // 웹 소켓 서버 생성
 
 require("./utils/io")(io); //io 매개변수를 io.js에서 가져옴
 
-
 httpServer.listen(process.env.SERVER_PORT, ()=>{ // 앱 서버
     console.log("Server listening on port:", process.env.SERVER_PORT)
 });
