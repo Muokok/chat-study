@@ -1,6 +1,7 @@
 // 웹 소켓을 설정해주기 위한 파일
 /*
 * HTTP를 사용해 서버를 만들고, 여기다가 웹 소켓과 DB를 올린다.
+* 궁금증 1: 왜 HTTP를 사용해 서버를 만드는거임?? >> HTTP 서버에 웹 소켓 서버(socket.io)와 앱 서버(Express) 2개를 올리는 거 아닐까?
 * */
 const {createServer} = require("http");
 const app = require("./app");
