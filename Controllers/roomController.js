@@ -3,6 +3,7 @@ const roomController = {};
 
 roomController.getAllRooms = async () => {
     const roomList = await Room.find({});
+    console.log(roomList);
     return roomList;
 }
 
